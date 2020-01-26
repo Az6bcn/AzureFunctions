@@ -1,0 +1,4 @@
+//to configure various options for the azure function runtime
+{
+    "version": "2.0"
+}
