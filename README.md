@@ -21,16 +21,16 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindin
 
 ## Triggers: 
 Triggers are what cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger.
-**Https Trigger**: makes the function respond to an http request.
-**Timer Trigger**: for scheduled functions.
-**Blob Trigger**: responds to blobs been created in blob storage.
-**Queue Trigger**: responds to message on a storage queue.
+* **Https Trigger**: makes the function respond to an http request.
+* **Timer Trigger**: for scheduled functions.
+* **Blob Trigger**: responds to blobs been created in blob storage.
+* **Queue Trigger**: responds to message on a storage queue.
 
 ## Bindings:
 Binding to a function is a way of declaratively connecting another resource to the function; bindings may be connected as input bindings, output bindings, or both. Data from bindings is provided to the function as parameters.
 Bindings are optional and a function might have one or multiple input and/or output bindings.
-**Input Bindings**: brings data into your function from an external servic, e.g blob binding (can read the content of a blob from a blobs storage container), cosmosDb binding (can find a document in the cosmosDb database) etc
-**Output Bindings**: allows you to send data to an external service e.g queue binding (you can send message to a queue), sendGrid binding (with the sendgrid output binding extension you can send an email) 
+* **Input Bindings**: brings data into your function from an external servic, e.g blob binding (can read the content of a blob from a blobs storage container), cosmosDb binding (can find a document in the cosmosDb database) etc
+* **Output Bindings**: allows you to send data to an external service e.g queue binding (you can send message to a queue), sendGrid binding (with the sendgrid output binding extension you can send an email) 
 
 Triggers and Bindings(input/ouput) are defined in the function.json file, generated automaticlly when we build.
 
