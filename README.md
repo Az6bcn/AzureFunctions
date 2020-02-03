@@ -36,6 +36,7 @@ Triggers and Bindings(input/ouput) are defined in the function.json file, genera
 
 Additional bindings are added as an extension through nuget packages e.g cosmosDb, sendGrid etc.
 https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings#supported-bindings
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table?tabs=csharp
 
 ## Summary:
 * To implement Rest API with azure functions we use Http Trigger attribute to customise the **route** for each function.
