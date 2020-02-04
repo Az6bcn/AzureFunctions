@@ -60,7 +60,7 @@ namespace ServerlessFuncs
 
         [FunctionName("GetTodoById")]
         public static async Task<IActionResult> GetTodoById([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "todo/{id}")] HttpRequest req, ILogger log, string id,
-            [Table("todos", "TODO", "{id}", Connection = "AzureStorageConnectionString")] TodoTableEntity todo)
+            [Table("todos", "TODO", "{id}", Connection = "AzureWebJobsStorage")] TodoTableEntity todo)
         {
             log.LogInformation("Getting a specific todo list item by its Id.");
 

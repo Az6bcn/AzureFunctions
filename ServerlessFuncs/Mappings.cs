@@ -9,7 +9,7 @@ namespace ServerlessFuncs
             {
                 PartitionKey = "TODO",
                 RowKey = todo.Id,
-                CreateedTime = todo.CreateedTime,
+                CreateedTime = DateTime.Now,
                 IsCompleted = todo.IsCompleted,
                 TaskDescription = todo.TaskDescription
             };
