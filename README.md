@@ -27,7 +27,7 @@ Triggers are what cause a function to run. A trigger defines how a function is i
 * **Queue Trigger**: responds to message on a storage queue.
 
 ## Bindings:
-Binding to a function is a way of declaratively connecting another resource to the function; bindings may be connected as input bindings, output bindings, or both. Data from bindings is provided to the function as parameters.
+Binding to a function is a way of declaratively connecting another resource to the function (allows you to connect to external bindings. e.g post message to a queue or write to a blob/ table storage.); bindings may be connected as input bindings, output bindings, or both. Data from bindings is provided to the function as parameters.
 Bindings are optional and a function might have one or multiple input and/or output bindings.
 * **Input Bindings**: brings data into your function from an external servic, e.g blob binding (can read the content of a blob from a blobs storage container), cosmosDb binding (can find a document in the cosmosDb database) etc
 * **Output Bindings**: allows you to send data to an external service e.g queue binding (you can send message to a queue), sendGrid binding (with the sendgrid output binding extension you can send an email) 
